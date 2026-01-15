@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Capital Quiz - Test your knowledge of world capitals! Challenge yourself with quizzes from every continent. Available in 60 languages.">
+    <meta name="keywords" content="capitals, quiz, geography, world capitals, countries, learning, trivia, game, educational, multilingual, cities">
+    <meta name="author" content="Volodymyr Shyrochuk">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://capitalquiz.vshyrochuk.com/">
+    <meta property="og:title" content="Capital Quiz - World Capitals Quiz">
+    <meta property="og:description" content="Test your knowledge of world capitals! Challenge yourself with quizzes from every continent. Available in 60 languages.">
+    <meta property="og:image" content="https://capitalquiz.vshyrochuk.com/images/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Capital Quiz - World Capitals Quiz">
+    <meta name="twitter:description" content="Test your knowledge of world capitals! Challenge yourself with quizzes from every continent. Available in 60 languages.">
+
+    <!-- iOS Smart App Banner - TODO: Update app-id when published -->
+    <!-- <meta name="apple-itunes-app" content="app-id=XXXXXXXXX, app-argument=https://capitalquiz.vshyrochuk.com"> -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+    <title>Capital Quiz - World Capitals Quiz</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="app-icon">🏛️</div>
+            <h1 class="gradient-text">Capital Quiz</h1>
+            <p class="tagline">Test your knowledge of world capitals</p>
+            <p class="description">
+                Challenge yourself with quizzes from every continent. Learn capitals from 200+ countries,
+                track your progress, unlock achievements, and compete in daily challenges.
+                Available in <strong>60 languages</strong>!
+            </p>
+
+            <div class="store-buttons">
+                <!-- TODO: Update URLs when apps are published -->
+                <a href="#" class="store-badge" id="ios-badge">
+                    <img src="/images/app-store-badge.svg" alt="Download on the App Store">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.volodymyrs.capitalquiz.capitalquiz" class="store-badge" id="android-badge">
+                    <img src="/images/google-play-badge.svg" alt="Get it on Google Play">
+                </a>
+                <a href="https://play.capitalquiz.vshyrochuk.com" class="web-play-badge" id="web-badge">
+                    <span class="web-play-icon">🌐</span>
+                    <span class="web-play-text">
+                        <span class="web-play-label">Play Now</span>
+                        <span class="web-play-subtitle">in Browser</span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile: Open in App button -->
+            <div class="open-app-container" id="open-app-container" style="display: none;">
+                <button class="open-app-btn" id="open-app-btn">Open in App</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why You'll Love It</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <h3>7 Continents</h3>
+                <p>Explore capitals from Europe, Asia, Africa, Americas, Oceania and more. Over 200 capitals to master!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>60 Languages</h3>
+                <p>Play in your native language! From English to Japanese, Arabic to Ukrainian - we've got you covered.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>75+ Achievements</h3>
+                <p>Unlock achievements as you progress. From beginner to geography master!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Daily Challenges</h3>
+                <p>New challenge every day! Test your skills with fresh questions and build your streak.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔥</div>
+                <h3>Streak System</h3>
+                <p>Keep your flame alive! Build daily streaks and earn special rewards for consistency.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Multiple Modes</h3>
+                <p>Standard, Timed, Lives, Survival, Endless - choose your challenge level.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3>Game Center</h3>
+                <p>Connect with Game Center or Google Play Games. Compete on leaderboards and sync progress!</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Statistics</h3>
+                <p>Track your progress with detailed stats. See your improvement over time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📤</div>
+                <h3>Share Results</h3>
+                <p>Share your quiz results with friends. Challenge them to beat your score!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section class="how-to-play">
+        <h2>How to Play</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Choose a Region</h3>
+                    <p>Select a continent or category to quiz yourself on.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Identify the Capital</h3>
+                    <p>Look at the country or flag and select the correct capital from the options.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Learn & Improve</h3>
+                    <p>Review your answers and learn from mistakes. Practice makes perfect!</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Build Your Streak</h3>
+                    <p>Play daily to maintain your streak and unlock special achievements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages">
+        <h2>Available in 60 Languages</h2>
+        <p class="languages-subtitle">Play in your native language for the best experience</p>
+        <div class="languages-grid">
+            <span>English</span>
+            <span>Spanish</span>
+            <span>French</span>
+            <span>German</span>
+            <span>Italian</span>
+            <span>Portuguese</span>
+            <span>Japanese</span>
+            <span>Korean</span>
+            <span>Chinese</span>
+            <span>Arabic</span>
+            <span>Hindi</span>
+            <span>Russian</span>
+            <span>Ukrainian</span>
+            <span>Polish</span>
+            <span>Turkish</span>
+            <span>Vietnamese</span>
+            <span>Thai</span>
+            <span>Indonesian</span>
+            <span>Dutch</span>
+            <span>Swedish</span>
+            <span class="more-languages">+40 more...</span>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Ready to Master World Capitals?</h2>
+        <p>Download now and start your geography journey!</p>
+        <div class="store-buttons">
+            <!-- TODO: Update URLs when apps are published -->
+            <a href="#" class="store-badge">
+                <img src="/images/app-store-badge.svg" alt="Download on the App Store">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.volodymyrs.capitalquiz.capitalquiz" class="store-badge">
+                <img src="/images/google-play-badge.svg" alt="Get it on Google Play">
+            </a>
+            <a href="https://play.capitalquiz.vshyrochuk.com" class="web-play-badge">
+                <span class="web-play-icon">🌐</span>
+                <span class="web-play-text">
+                    <span class="web-play-label">Play Now</span>
+                    <span class="web-play-subtitle">in Browser</span>
+                </span>
+            </a>
+        </div>
+
+        <!-- QR Code for Desktop -->
+        <div class="qr-container" id="qr-container" style="display: none;">
+            <p class="qr-text">Scan to download on mobile</p>
+            <div class="qr-code" id="qr-code"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/support.html">Support</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </div>
+            <p class="copyright">&copy; 2026 Volodymyr Shyrochuk. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
