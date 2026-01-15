@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.volodymyrs.capitalquiz.capitalquiz",
+      "sha256_cert_fingerprints": [
+        "31:A9:25:BA:F4:3C:A1:1F:08:C9:FE:0F:7C:D2:3C:20:A8:08:6A:6C:D6:6C:2B:66:89:3D:2D:71:26:B4:8B:B3"
+      ]
+    }
+  }
+]
